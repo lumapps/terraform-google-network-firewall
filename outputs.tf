@@ -7,3 +7,8 @@ output "tag" {
   description = "The target tag"
   value       = "${google_compute_firewall.new-firewall.target_tags[0]}"
 }
+
+output "name" {
+  description = "The firewall rule name"
+  value       = "${google_compute_firewall.new-firewall.name[0]}"
+}
