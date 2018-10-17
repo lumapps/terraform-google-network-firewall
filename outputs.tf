@@ -5,5 +5,5 @@ output "self_link" {
 
 output "name" {
   description = "The firewall rule name"
-  value       = "${google_compute_firewall.new-firewall.name[0]}"
+  value       = "${google_compute_firewall.new-firewall.name}"
 }
