@@ -19,3 +19,8 @@ variable source_ranges {
   description = "A list of source CIDR ranges that this firewall applies to. Can't be used for EGRESS"
   type        = "list"
 }
+
+variable target_tag {
+  description = "The instance tag to apply the rule to."
+  type        = "string"
+}
